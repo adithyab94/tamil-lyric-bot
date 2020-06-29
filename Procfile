@@ -1,1 +1,1 @@
-worker: python lyricbot.py
+web: python lyricbot.py
