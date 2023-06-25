@@ -7,7 +7,7 @@ dotenv.config()
 const { BskyAgent } = blue;
 
 const generateRandomLyricsPost = async () => {
-    const fileStream = fs.createReadStream('lyricsonly.csv');
+    const fileStream = fs.createReadStream('lyricsOnly.csv');
 
     const rl = readline.createInterface({
         input: fileStream,
