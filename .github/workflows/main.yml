@@ -19,5 +19,5 @@ jobs:
     - name: Run the script
       run: node bsky.js
       env:
-        BLUESKY_BOT_EMAIL: ${{ secrets.BLUESKY_BOT_EMAIL }}
-        BLUESKY_BOT_PASSWORD: ${{ secrets.BLUESKY_BOT_PASSWORD }}
+        BLUESKY_BOT_EMAIL: ${{ secrets.BSKY_HANDLE }}
+        BLUESKY_BOT_PASSWORD: ${{ secrets.BSKY_PASSWORD }}
