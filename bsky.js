@@ -31,7 +31,7 @@ const generateRandomLyricsPost = async () => {
     //now that we have the post, lets post it to bluesky
     const {RichText} = blue;
     const agent = new BskyAgent({ service: 'https://bsky.social/' })
-    await agent.login({identifier: process.env.BLUESKY_BOT_EMAIL, password: process.env.BLUESKY_BOT_PASSWORD})
+    await agent.login({identifier: process.env.BSKY_HANDLE, password: process.env.BSKY_PASSWORD})
     const rt = new RichText({text: postText })
     const postRecord = {
         $type: 'app.bsky.feed.post',
